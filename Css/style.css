@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --primarycolor1: #fff;
+    --primarycolor2: #1a48a3;
+    --primarycolor3: #000;
+}
+
+/* -----------------home page starts------------------ */
+#home-page {
+    height: 100vh;
+    width: 100%;
+    color: var(--primarycolor1);
+    background: url(/Images/homepage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 10rem;
+    position: relative;
+}
+
+#home-page nav {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+#home-page nav img {
+    width: 8rem;
+    height: 100%;
+}
+
+#home-page nav a {
+    text-decoration: none;
+    color: var(--primarycolor1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+#home-page section {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-30%);
+}
+
+#home-page section h1 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+    text-align: center;
+}
+#home-page section p {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: lighter;
+}
+#home-page section a {
+    text-align: center;
+    width: 6rem;
+    padding: 0.5rem 0.5rem;
+    border: 2px solid var(--primarycolor1);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+}
+
+#intro-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.to-services {
+    color: var(--primarycolor2);
+    background-color: var(--primarycolor1);
+}
+.to-about-us {
+    color: var(--primarycolor1);
+}
