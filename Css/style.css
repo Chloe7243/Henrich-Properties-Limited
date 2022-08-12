@@ -49,10 +49,12 @@ h4 {
     color: var(--neutral-color);
 }
 .bg-dark {
-    background-color: hsl(0, 0%, 90%);
+    background-color: #e6e6e6;
 }
 .container {
-    margin-inline: 10rem;
+    margin-inline: auto;
+    width: min(90%, 95rem);
+    padding-block: min(8%, 4rem);
 }
 /* ----------------------- */
 
