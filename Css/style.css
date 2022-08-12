@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Poppins;
-    line-height: 1.6;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 *,
 *::before,
 *::after {
@@ -12,10 +12,11 @@ body {
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    line-height: 1.6;
 }
 
 ::-webkit-scrollbar {
@@ -27,9 +28,33 @@ html {
     --neutral-color: #ffff;
 }
 
+/* Utility Classes */
+
 .text-center {
     text-align: center;
 }
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1;
+    font-weight: bold;
+}
+
+.bg-light {
+    background-color: var(--neutral-color);
+}
+.bg-primary {
+    background-color: var(--primary-color-1);
+    color: var(--neutral-color);
+}
+.bg-dark {
+    background-color: hsl(0, 0%, 90%);
+}
+.container {
+    margin-inline: 10rem;
+}
+/* ----------------------- */
 
 /* -----------------home page starts------------------ */
 #home-page {
@@ -39,7 +64,7 @@ html {
     background: url(/Images/homepage.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding: 0 10rem;
+    /* padding: 0 10rem; */
     position: relative;
 }
 
@@ -49,6 +74,7 @@ html {
     align-items: center;
     justify-content: space-between;
     font-size: 1.6rem;
+    padding-inline: 10rem;
 }
 
 #home-page nav img {
@@ -80,6 +106,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-30%);
+    /* margin-inline: 10rem; */
 }
 
 #home-page header h1 {
