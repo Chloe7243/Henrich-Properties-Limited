@@ -32,7 +32,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     padding: 0 10rem;
-    position: relative;
+    position: relative;                          
 }
 
 #home-page nav {
@@ -110,3 +110,4 @@ html {
 .to-about-us {
     color: var(--primarycolor1);
 }
+
