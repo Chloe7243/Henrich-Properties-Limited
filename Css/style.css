@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 html {
@@ -63,7 +63,7 @@ html {
 .nav {
     display: flex;
     gap: 2rem;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 #home-page header {
