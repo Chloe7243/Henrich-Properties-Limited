@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Poppins;
+    line-height: 1.6;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
@@ -18,21 +23,24 @@ html {
 }
 
 :root {
-    --primarycolor1: #fff;
-    --primarycolor2: #193e79;
-    --primarycolor3: #000;
+    --primary-color-1: #193e79;
+    --neutral-color: #ffff;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* -----------------home page starts------------------ */
 #home-page {
     height: 100vh;
     max-width: 100%;
-    color: var(--primarycolor1);
+    color: var(--neutral-color);
     background: url(/Images/homepage.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 0 10rem;
-    position: relative;                          
+    position: relative;
 }
 
 #home-page nav {
@@ -50,7 +58,7 @@ html {
 
 #home-page nav a {
     text-decoration: none;
-    color: var(--primarycolor1);
+    color: var(--neutral-color);
 }
 
 .logo {
@@ -89,7 +97,7 @@ html {
     text-align: center;
     width: 6rem;
     padding: 0.5rem 0.5rem;
-    border: 2px solid var(--primarycolor1);
+    border: 2px solid var(--neutral-color);
     text-decoration: none;
     display: inline-block;
     margin: 10px;
@@ -104,10 +112,8 @@ html {
 }
 
 .to-services {
-    color: var(--primarycolor2);
-    background-color: var(--primarycolor1);
+    background-color: var(--neutral-color);
 }
 .to-about-us {
-    color: var(--primarycolor1);
+    color: var(--neutral-color);
 }
-
