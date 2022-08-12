@@ -28,7 +28,7 @@ html {
     height: 100vh;
     max-width: 100%;
     color: var(--primarycolor1);
-    background: url(Images/homepage.jpg);
+    background: url(/Images/homepage.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 0 10rem;
@@ -66,7 +66,7 @@ html {
     font-weight: 500;
 }
 
-#home-page section {
+#home-page header {
     width: fit-content;
     position: absolute;
     top: 50%;
@@ -74,17 +74,18 @@ html {
     transform: translateX(-50%) translateY(-30%);
 }
 
-#home-page section h1 {
-    /* font-size: clamp(4rem, 1rem + 5vw, 10rem); */
+#home-page header h1 {
+    font-size: clamp(4rem, 5.5rem + 1vw, 10rem);
     line-height: 6.5rem;
     text-align: center;
 }
-#home-page section p {
+#home-page header p {
     font-size: 1.8rem;
     text-align: center;
     font-weight: lighter;
+    line-height: 4rem;
 }
-#home-page section a {
+#home-page header a {
     text-align: center;
     width: 6rem;
     padding: 0.5rem 0.5rem;
