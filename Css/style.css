@@ -4,12 +4,16 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 body {
@@ -33,12 +37,12 @@ body {
 .text-center {
     text-align: center;
 }
+
 h1,
 h2,
 h3,
 h4 {
     line-height: 1;
-    font-weight: bold;
 }
 
 .bg-light {
@@ -64,13 +68,12 @@ h4 {
 
 /* -----------------home page starts------------------ */
 #home-page {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     color: var(--neutral-color);
     background: url(/Images/homepage.jpg);
     background-size: cover;
     background-attachment: fixed;
-    /* padding: 0 10rem; */
     position: relative;
 }
 
@@ -109,44 +112,36 @@ h4 {
 #home-page header {
     width: fit-content;
     position: absolute;
+    height: fit-content;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-30%);
-    /* margin-inline: 10rem; */
 }
 
-#home-page header h1 {
-    font-size: clamp(4rem, 5.5rem + 1vw, 10rem);
-    line-height: 6.5rem;
-    text-align: center;
+.header-text h1 {
+    font-size: 5rem;
+    font-weight: bold;
 }
-#home-page header p {
-    font-size: 1.8rem;
-    text-align: center;
-    font-weight: lighter;
-    line-height: 4rem;
+.header-text p {
+    font-size: 1.6rem;
+    font-weight: normal;
 }
-#home-page header a {
-    text-align: center;
-    width: 6rem;
-    padding: 0.5rem 0.5rem;
-    border: 2px solid var(--neutral-color);
+
+.intro-buttons {
+    min-width: fit-content;
+    margin-block: 1.7rem;
+}
+
+.intro-buttons a {
     text-decoration: none;
-    display: inline-block;
-    margin: 10px;
-    font-weight: 600;
+    font-size: 1.6rem;
+    margin-inline: 1.5rem;
+    padding: 0.5rem 1rem;
 }
-
-#intro-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .to-services {
     background-color: var(--neutral-color);
 }
 .to-about-us {
     color: var(--neutral-color);
+    outline: 0.2rem solid var(--neutral-color);
 }
