@@ -94,9 +94,9 @@ img {
         flex-direction: row;
         gap: 2rem;
     }
-    .row-direction > * {
+    /* .row-direction > * {
         flex-basis: 100%;
-    }
+    } */
 }
 
 /* ----------------------- */
@@ -166,7 +166,6 @@ img {
     min-width: fit-content;
     margin-block: 2.5rem;
 }
-
 .intro-buttons a {
     text-decoration: none;
     font-size: var(--fs-400);
@@ -174,28 +173,33 @@ img {
     padding: 0.5rem 1.5rem;
 }
 .to-services {
-    background-color: var(--light-color);
-    color: black;
-}
-.to-about-us {
     color: var(--light-color);
     outline: 0.2rem solid var(--light-color);
 }
-
-/* about us */
-
-.container.about-row {
-    /* background-color: #193e79; */
-    /* min-height: 60rem; */
-    height: min(70%, 100vh);
+.to-contact {
+    background-color: var(--light-color);
+    color: black;
 }
 
-/* .about-row.container {
-    height: 60rem;
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
+/* -----ABOUT US----- */
+/* #about {
+    height: fit-content;
 } */
+.container.about-row {
+    /* height: min(100vh); */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media (min-width: 60em) {
+    .container.about-row {
+        /* height: min(100vh); */
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
 .about-text {
     flex-basis: 40%;
 }
@@ -205,9 +209,9 @@ img {
 .about-text p {
     font-size: var(--fs-400);
 }
+
 .about-img {
     position: relative;
-    /* background-color: #193e79; */
     flex-basis: 60%;
 }
 
@@ -225,4 +229,15 @@ img {
     width: 80%;
     height: 50%;
     z-index: 2;
+}
+@media (max-width: 60em) {
+    .about-img {
+        display: none;
+    }
+    .about-img-1 {
+        display: none;
+    }
+    .about-img-2 {
+        display: none;
+    }
 }
