@@ -164,12 +164,15 @@ img {
 .intro-buttons {
     min-width: fit-content;
     margin-block: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
 .intro-buttons a {
     text-decoration: none;
     font-size: var(--fs-400);
-    margin-inline: 1.5rem;
-    padding: 0.5rem 1.5rem;
+    margin-inline: min(1rem, 1.5rem);
+    padding-block: clamp(0.2rem, 0.5vw + 0.2rem, 0.5rem);
+    padding-inline: clamp(0.3rem, 1vw + 1rem, 1.5rem);
 }
 .to-services {
     color: var(--light-color);
@@ -179,6 +182,7 @@ img {
     background-color: var(--light-color);
     color: black;
 }
+/* --------------- */
 
 /* -----ABOUT US----- */
 .container.about-row {
@@ -204,6 +208,7 @@ img {
 .about-text p {
     font-size: var(--fs-400);
     color: var(--grey-color);
+    /* text-align: justify; */
 }
 
 .about-img {
@@ -226,7 +231,7 @@ img {
     height: 50%;
     z-index: 2;
 }
-@media (max-width: 940px) {
+@media (max-width: 939px) {
     .about-img {
         display: none;
     }
@@ -237,3 +242,4 @@ img {
         display: none;
     }
 }
+/* --------------- */
