@@ -215,14 +215,14 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 85%;
+    width: 80%;
     height: 55%;
 }
 .about-img-2 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 80%;
+    width: 75%;
     height: 50%;
     z-index: 2;
 }
