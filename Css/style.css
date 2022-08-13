@@ -28,49 +28,84 @@ body {
 }
 
 :root {
-    --primary-color-1: #193e79;
-    --neutral-color: #ffff;
+    --primary-color: #193e79;
+    --light-color: #ffff;
+    --dark-color: #000000;
+    --fs-400: 1.2rem;
+    --fs-600: 1.4rem;
+    --fs-800: 2.4rem;
+    --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
+}
+@media (min-width: 40em) {
+    :root {
+        --fs-400: 1.6rem;
+        --fs-600: 1.8rem;
+        --fs-800: 3.2rem;
+    }
 }
 
-/* Utility Classes */
-
-.text-center {
-    text-align: center;
-}
+/* -----UTILITY CLASSES----- */
 
 h1,
 h2,
-h3,
 h4 {
     line-height: 1;
 }
 
+h2,
+h4,
+p {
+    margin-block: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
 .bg-light {
-    background-color: var(--neutral-color);
+    background-color: var(--light-color);
 }
 .bg-primary {
-    background-color: var(--primary-color-1);
-    color: var(--neutral-color);
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 .bg-dark {
     background-color: #e6e6e6;
 }
 .container {
     margin-inline: auto;
-    width: min(90%, 95rem);
-    padding-block: min(8%, 4rem);
+    width: min(90%, 110rem);
+    padding-block: min(8%, 5rem);
 }
 .container-narrow {
-    max-width: 38rem;
+    max-width: 43rem;
     margin-inline: auto;
 }
+
+.row-direction {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 40em) {
+    .row-direction {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .row-direction > * {
+        flex-basis: 100%;
+    }
+}
+
 /* ----------------------- */
 
 /* -----------------home page starts------------------ */
 #home-page {
     min-height: 100vh;
     max-width: 100%;
-    color: var(--neutral-color);
+    color: var(--light-color);
     background: url(/Images/homepage.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -82,7 +117,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.6rem;
+    font-size: var(--fs-400);
     padding-inline: 10rem;
 }
 
@@ -119,29 +154,75 @@ h4 {
 }
 
 .header-text h1 {
-    font-size: 5rem;
+    font-size: var(--fs-xl);
     font-weight: bold;
 }
-.header-text p {
-    font-size: 1.6rem;
+.header-text h2 {
+    font-size: var(--fs-600);
     font-weight: normal;
 }
 
 .intro-buttons {
     min-width: fit-content;
-    margin-block: 1.7rem;
+    margin-block: 2.5rem;
 }
 
 .intro-buttons a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: var(--fs-400);
     margin-inline: 1.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
 }
 .to-services {
-    background-color: var(--neutral-color);
+    background-color: var(--light-color);
+    color: black;
 }
 .to-about-us {
-    color: var(--neutral-color);
-    outline: 0.2rem solid var(--neutral-color);
+    color: var(--light-color);
+    outline: 0.2rem solid var(--light-color);
+}
+
+/* about us */
+
+.container.about-row {
+    /* background-color: #193e79; */
+    /* min-height: 60rem; */
+    height: min(70%, 100vh);
+}
+
+/* .about-row.container {
+    height: 60rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+} */
+.about-text {
+    flex-basis: 40%;
+}
+.about-text h2 {
+    font-size: var(--fs-800);
+}
+.about-text p {
+    font-size: var(--fs-400);
+}
+.about-img {
+    position: relative;
+    /* background-color: #193e79; */
+    flex-basis: 60%;
+}
+
+.about-img-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: 55%;
+}
+.about-img-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 50%;
+    z-index: 2;
 }
