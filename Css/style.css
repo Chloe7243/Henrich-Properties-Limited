@@ -186,7 +186,7 @@ img {
     flex-direction: column;
     gap: 1rem;
 }
-@media (min-width: 50em) {
+@media (min-width: 940px) {
     .container.about-row {
         display: flex;
         flex-direction: row;
@@ -226,7 +226,7 @@ img {
     height: 50%;
     z-index: 2;
 }
-@media (max-width: 50em) {
+@media (max-width: 940px) {
     .about-img {
         display: none;
     }
