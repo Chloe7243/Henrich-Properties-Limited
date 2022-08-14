@@ -105,12 +105,8 @@ img {
     display: flex;
     flex-direction: column;
 }
-<<<<<<< HEAD
-@media (min-width: 50em) {
-=======
 
 @media (min-width: 40em) {
->>>>>>> b2c76177e55071542de5cbaf2d5c87aa073c7535
     .row-direction {
         flex-direction: row;
         gap: 2rem;
@@ -347,7 +343,6 @@ img {
         display: none;
     }
 }
-<<<<<<< HEAD
 /* --------------- */
 
 /* -----WHY CHOOSE US----- */
@@ -381,7 +376,5 @@ img {
 }
 
 /* --------------- */
-=======
 
 /* --------------- */
->>>>>>> b2c76177e55071542de5cbaf2d5c87aa073c7535
