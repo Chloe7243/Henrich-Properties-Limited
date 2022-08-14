@@ -102,7 +102,6 @@ img {
 
 /*-----HOME PAGE-----*/
 #home-page {
-<<<<<<< HEAD
     min-height: 100vh;
     max-width: 100%;
     color: var(--light-color);
@@ -110,15 +109,13 @@ img {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-=======
-  min-height: 100vh;
-  max-width: 100%;
-  color: var(--light-color);
-  background: url(/Images/homepagedark.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
->>>>>>> db68570f2069b9d8867f584311df4942b4b057bd
+    min-height: 100vh;
+    max-width: 100%;
+    color: var(--light-color);
+    background: url(/Images/homepagedark.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
 #home-page nav {
