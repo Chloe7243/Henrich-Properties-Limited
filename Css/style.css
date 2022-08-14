@@ -7,7 +7,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -85,11 +85,19 @@ img {
     margin-inline: auto;
 }
 
+/* -------------------------------------- */
+/* .card {
+    border: 2px solid red;
+    max-width: 35rem;
+    flex-basis: 100%;
+} */
+/* -------------------------------------- */
+
 .row-direction {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 40em) {
+@media (min-width: 50em) {
     .row-direction {
         flex-direction: row;
         gap: 2rem;
@@ -294,4 +302,36 @@ img {
         display: none;
     }
 }
+/* --------------- */
+
+/* -----WHY CHOOSE US----- */
+
+.text-center.container-narrow h2 {
+    font-size: var(--fs-800);
+    margin-bottom: 2rem;
+}
+.text-center.container-narrow p {
+    font-size: var(--fs-400);
+    color: var(--grey-color);
+}
+.why-choose-us-card {
+    flex-basis: 100%;
+}
+.why-choose-us-card-text {
+    display: flex;
+    flex-direction: column;
+    background-color: #193e79;
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+}
+.why-choose-us-card-text h4 {
+    font-size: var(--fs-600);
+}
+.why-choose-us-card-text p {
+    font-size: var(--fs-400);
+}
+.why-choose-us-card-text button {
+    justify-self: flex-end;
+}
+
 /* --------------- */
