@@ -105,7 +105,7 @@ img {
   min-height: 100vh;
   max-width: 100%;
   color: var(--light-color);
-  background: url(/Images/homepage.jpg);
+  background: url(/Images/homepagedark.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -169,7 +169,7 @@ img {
         z-index: 2;
         background-color: rgba(255, 255, 255, 0.1);
         height: 100vh;
-        width: clamp(15em, 35% + 1vw, 20em);
+        width: clamp(15em, 25% + 10vw, 20em);
         position: fixed;
         right: -20em;
     }
