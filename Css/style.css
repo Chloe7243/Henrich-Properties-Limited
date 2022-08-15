@@ -40,9 +40,9 @@ body {
     --fs-xl: clamp(4rem, 10vw + 1rem, 7rem);
 }
 
-@media (min-width: 40em) {
+@media (min-width: 45em) {
     :root {
-        --fs-400: 1.8rem;
+        --fs-400: 1.6rem;
         --fs-600: 2rem;
         --fs-800: 3.2rem;
     }
@@ -93,14 +93,6 @@ img {
     margin-inline: auto;
 }
 
-/* -------------------------------------- */
-/* .card {
-    border: 2px solid red;
-    max-width: 35rem;
-    flex-basis: 100%;
-} */
-/* -------------------------------------- */
-
 .row-direction {
     display: flex;
     flex-direction: column;
@@ -124,14 +116,12 @@ img {
     min-height: 100vh;
     max-width: 100%;
     color: var(--light-color);
-    /* background: url(./Images/homepagedark.jpg); */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
 #home-page nav {
-    /* height: 8rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,7 +132,6 @@ img {
 #home-page nav img {
     /* width: clamp(5rem, 5rem + 1vw, 8rem); */
     width: 8rem;
-    /* height: 100%; */
 }
 
 #home-page nav a {
@@ -297,7 +286,6 @@ img {
 .about-text p {
     font-size: var(--fs-400);
     color: var(--grey-color);
-    /* text-align: justify; */
 }
 
 .about-img {
@@ -348,15 +336,22 @@ img {
     font-size: var(--fs-400);
     color: var(--grey-color);
 }
+
 .why-choose-us-card {
     flex-basis: 100%;
-}
-.why-choose-us-card-text {
     display: flex;
     flex-direction: column;
-    background-color: #193e79;
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
+    justify-content: space-between;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    overflow-x: scroll;
+    /* width: clamp(25rem, 65% + 5rem, 40rem); */
+}
+.why-choose-us-card-text {
+    height: 60%;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
 }
 .why-choose-us-card-text h4 {
     font-size: var(--fs-600);
@@ -364,10 +359,23 @@ img {
 .why-choose-us-card-text p {
     font-size: var(--fs-400);
 }
-.why-choose-us-card-text button {
-    justify-self: flex-end;
+.why-choose-us-card-text > button {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 1.2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
+.why-choose-us-card-image {
+    flex-basis: 40%;
+    background-color: aqua;
+}
+.why-choose-us-card img {
+    height: 50%;
+    width: 100%;
+}
 /* --------------- */
 
 /* --------------- */
