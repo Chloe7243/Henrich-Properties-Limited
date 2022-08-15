@@ -61,9 +61,9 @@ p {
     margin-block: 1rem;
 }
 
-img {
+/* img {
     max-width: 100%;
-}
+} */
 
 .text-center {
     text-align: center;
@@ -93,7 +93,7 @@ img {
     margin-inline: auto;
 }
 
-.row-direction {
+/* .row-direction {
     display: flex;
     flex-direction: column;
 }
@@ -102,12 +102,12 @@ img {
     .row-direction {
         flex-direction: row;
         gap: 2rem;
-    }
+    } */
 
-    /* .row-direction > * {
+/* .row-direction > * {
         flex-basis: 100%;
     } */
-}
+/* } */
 
 /* ---------------- */
 
@@ -298,16 +298,16 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%;
-    height: 55%;
+    width: 75%;
+    height: 60%;
 }
 
 .about-img-2 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 75%;
-    height: 50%;
+    width: 70%;
+    height: 55%;
     z-index: 2;
 }
 
@@ -327,7 +327,6 @@ img {
 /* --------------- */
 
 /* -----WHY CHOOSE US----- */
-
 .text-center.container-narrow h2 {
     font-size: var(--fs-800);
     margin-bottom: 2rem;
@@ -337,45 +336,45 @@ img {
     color: var(--grey-color);
 }
 
+.why-choose-us-cards-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
 .why-choose-us-card {
-    flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-    overflow-x: scroll;
-    /* width: clamp(25rem, 65% + 5rem, 40rem); */
+    margin-top: 1rem;
+    flex: 0.4 1 34rem;
+    background-color: var(--light-color);
 }
-.why-choose-us-card-text {
-    height: 60%;
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 1.2rem;
+
+.why-choose-us-card img {
+    height: 23.6rem;
+    width: 100%;
 }
-.why-choose-us-card-text h4 {
+.why-choose-us-card h4 {
     font-size: var(--fs-600);
+    margin-inline: 1.5rem;
 }
-.why-choose-us-card-text p {
+.why-choose-us-card p {
     font-size: var(--fs-400);
+    margin-inline: 1.5rem;
 }
-.why-choose-us-card-text > button {
+.why-choose-us-card button {
     margin-top: auto;
+    margin-bottom: 1.5rem;
+    margin-inline: 1.5rem;
     align-self: flex-start;
     padding: 1.2rem;
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
+    cursor: pointer;
 }
 
-.why-choose-us-card-image {
-    flex-basis: 40%;
-    background-color: aqua;
-}
-.why-choose-us-card img {
-    height: 50%;
-    width: 100%;
-}
 /* --------------- */
 
 /* --------------- */
