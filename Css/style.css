@@ -361,8 +361,10 @@ p {
 .why-choose-us-card p {
     font-size: var(--fs-400);
     margin-inline: 1.5rem;
+    color: var(--grey-color);
 }
 .why-choose-us-card button {
+    font-size: var(--fs-400);
     margin-top: auto;
     margin-bottom: 1.5rem;
     margin-inline: 1.5rem;
