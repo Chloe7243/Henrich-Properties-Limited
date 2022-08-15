@@ -329,7 +329,6 @@ p {
 /* -----WHY CHOOSE US----- */
 .text-center.container-narrow h2 {
     font-size: var(--fs-800);
-    margin-bottom: 2rem;
 }
 .text-center.container-narrow p {
     font-size: var(--fs-400);
@@ -345,7 +344,7 @@ p {
 .why-choose-us-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
     margin-top: 1rem;
     flex: 0.4 1 34rem;
     background-color: var(--light-color);
