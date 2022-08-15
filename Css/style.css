@@ -342,7 +342,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     overflow-x: scroll;
     /* width: clamp(25rem, 65% + 5rem, 40rem); */
 }
@@ -351,7 +351,7 @@ img {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 .why-choose-us-card-text h4 {
     font-size: var(--fs-600);
@@ -362,7 +362,7 @@ img {
 .why-choose-us-card-text > button {
     margin-top: auto;
     align-self: flex-start;
-    padding: 1rem;
+    padding: 1.2rem;
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
