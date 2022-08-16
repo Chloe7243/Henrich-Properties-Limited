@@ -160,15 +160,6 @@ nav a {
     display: none;
 }
 
-.overlay {
-    position: absolute;
-    z-index: 5;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-}
-
 /* MEDIA FOR THE HAMBURGER NAV OR SLIDENAV */
 @media (max-width: 850px) {
     nav img {
@@ -211,6 +202,15 @@ nav a {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }
+
+    .overlay {
+    position: absolute;
+    z-index: 5;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
 }
 
 header {
