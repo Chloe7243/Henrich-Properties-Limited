@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
+/* ===============
+    Global Styles
+================*/
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -48,7 +51,6 @@ body {
     }
 }
 
-/* -----UTILITY CLASSES----- */
 h1,
 h2,
 h4 {
@@ -60,11 +62,11 @@ h4,
 p {
     margin-block: 1rem;
 }
+/* ----- End ----- */
 
-/* img {
-    max-width: 100%;
-} */
-
+/* ===============
+    Utility Classes
+================*/
 .text-center {
     text-align: center;
 }
@@ -92,26 +94,11 @@ p {
     max-width: 43rem;
     margin-inline: auto;
 }
+/* --------End-------- */
 
-/* .row-direction {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 40em) {
-    .row-direction {
-        flex-direction: row;
-        gap: 2rem;
-    } */
-
-/* .row-direction > * {
-        flex-basis: 100%;
-    } */
-/* } */
-
-/* ---------------- */
-
-/*-----HOME PAGE-----*/
+/* ===============
+    Home Page
+================*/
 #home-page {
     min-height: 100vh;
     max-width: 100%;
