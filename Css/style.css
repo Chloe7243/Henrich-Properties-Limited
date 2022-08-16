@@ -94,6 +94,19 @@ p {
     max-width: 43rem;
     margin-inline: auto;
 }
+
+.button {
+    font-size: var(--fs-400);
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    margin-inline: 1.5rem;
+    align-self: flex-start;
+    padding: 1.2rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
 /* --------End-------- */
 
 /* ===============
@@ -350,7 +363,7 @@ p {
     margin-inline: 1.5rem;
     color: var(--grey-color);
 }
-.why-choose-us-card button {
+/* .why-choose-us-card button {
     font-size: var(--fs-400);
     margin-top: auto;
     margin-bottom: 1.5rem;
@@ -361,7 +374,7 @@ p {
     background-color: var(--primary-color);
     color: var(--light-color);
     cursor: pointer;
-}
+} */
 
 /* --------------- */
 
