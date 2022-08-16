@@ -121,7 +121,7 @@ p {
     position: relative;
 }
 
-#home-page nav {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,12 +129,12 @@ p {
     padding-inline: min(5%, 10rem);
 }
 
-#home-page nav img {
+nav img {
     /* width: clamp(5rem, 5rem + 1vw, 8rem); */
     width: 8rem;
 }
 
-#home-page nav a {
+nav a {
     text-decoration: none;
     color: var(--neutral-color);
 }
@@ -171,7 +171,7 @@ p {
 
 /* MEDIA FOR THE HAMBURGER NAV OR SLIDENAV */
 @media (max-width: 850px) {
-    #home-page nav img {
+    nav img {
         width: 5rem;
     }
 
@@ -213,7 +213,7 @@ p {
     }
 }
 
-#home-page header {
+header {
     width: fit-content;
     position: absolute;
     height: fit-content;
@@ -256,10 +256,11 @@ p {
     background-color: var(--light-color);
     color: black;
 }
+/* -------End------- */
 
-/* --------------- */
-
-/* -----ABOUT US----- */
+/* ===============
+    About Us
+================*/
 .container.about-row {
     display: flex;
     flex-direction: column;
@@ -324,9 +325,11 @@ p {
         display: none;
     }
 }
-/* --------------- */
+/* -------End-------- */
 
-/* -----WHY CHOOSE US----- */
+/* ===============
+    Why Choose us
+================*/
 .text-center.container-narrow h2 {
     font-size: var(--fs-800);
 }
@@ -363,19 +366,10 @@ p {
     margin-inline: 1.5rem;
     color: var(--grey-color);
 }
-/* .why-choose-us-card button {
-    font-size: var(--fs-400);
-    margin-top: auto;
-    margin-bottom: 1.5rem;
-    margin-inline: 1.5rem;
-    align-self: flex-start;
-    padding: 1.2rem;
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    cursor: pointer;
-} */
+/* --------End------- */
 
-/* --------------- */
+/* ===============
+Best in the Business
+================*/
 
-/* --------------- */
+/* -------End------- */
