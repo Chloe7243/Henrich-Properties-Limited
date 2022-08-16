@@ -24,7 +24,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     line-height: 1.6;
 }
 
@@ -106,6 +106,10 @@ p {
     background-color: var(--primary-color);
     color: var(--light-color);
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.06, 1.06);
 }
 /* --------End-------- */
 
@@ -371,5 +375,33 @@ header {
 /* ===============
 Best in the Business
 ================*/
-
+.best-in-the-business-cards {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.best-in-the-business-card {
+    flex: 1 1 15.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.best-in-the-business-card img {
+    width: 5rem;
+    height: 5rem;
+    /* margin-inline: 0 auto; */
+}
+.best-in-the-business-card h4 {
+    font-size: var(--fs-600);
+    text-align: center;
+    min-height: 4rem;
+    /* margin-inline: auto; */
+}
+.best-in-the-business-card p {
+    font-size: var(--fs-400);
+    text-align: center;
+    /* margin-inline: auto; */
+}
 /* -------End------- */
