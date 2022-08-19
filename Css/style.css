@@ -100,12 +100,13 @@ p {
     margin-bottom: 1.5rem;
     margin-inline: 1.5rem;
     align-self: flex-start;
-    padding: 1.2rem 2.5rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
 }
 .button:hover {
     transform: scale(1.06, 1.06);
