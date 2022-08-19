@@ -60,6 +60,18 @@ sideBar.addEventListener("click", () => {
     sideBarClose();
 });
 
+//SWIPER SECTION
+const scrollable = document.querySelector(".services-cards-container");
+const prev = document.querySelector(".button-next");
+const next = document.querySelector(".button-prev");
+
+next.addEventListener("click", () => {
+    scrollable.scrollLeft -= 362;
+});
+prev.addEventListener("click", () => {
+    scrollable.scrollLeft += 362;
+});
+
 // ORIGINAL CODE
 
 // FN FOR SIDE NAV BAR TO SLIDE OUT

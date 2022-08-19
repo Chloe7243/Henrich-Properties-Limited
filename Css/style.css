@@ -5,13 +5,12 @@
 ================*/
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
@@ -101,7 +100,7 @@ p {
     margin-bottom: 1.5rem;
     margin-inline: 1.5rem;
     align-self: flex-start;
-    padding: 1.2rem;
+    padding: 1.2rem 2.5rem;
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -110,6 +109,7 @@ p {
 }
 .button:hover {
     transform: scale(1.06, 1.06);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 /* --------End-------- */
 
@@ -134,7 +134,6 @@ nav {
 }
 
 nav img {
-    /* width: clamp(5rem, 5rem + 1vw, 8rem); */
     width: 8rem;
 }
 
@@ -164,7 +163,7 @@ nav a {
     display: none;
 }
 
-/* MEDIA FOR THE HAMBURGER NAV OR SLIDENAV */
+/* MEDIA-QUERY FOR THE HAMBURGER NAV OR SLIDENAV */
 @media (max-width: 850px) {
     nav img {
         width: 5rem;
@@ -208,13 +207,13 @@ nav a {
     }
 
     .overlay {
-    position: absolute;
-    z-index: 5;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-}
+        position: absolute;
+        z-index: 5;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+    }
 }
 
 header {
@@ -375,8 +374,11 @@ header {
 /* ===============
 Best in the Business
 ================*/
-.best-in-the-business-cards {
-    margin-top: 4rem;
+.best-in-business p {
+    color: var(--light-color) !important;
+}
+.best-in-the-business-cards-container {
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -386,22 +388,53 @@ Best in the Business
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
 }
 .best-in-the-business-card img {
     width: 5rem;
     height: 5rem;
-    /* margin-inline: 0 auto; */
+    margin-bottom: 1rem;
 }
 .best-in-the-business-card h4 {
     font-size: var(--fs-600);
     text-align: center;
-    min-height: 4rem;
-    /* margin-inline: auto; */
 }
 .best-in-the-business-card p {
     font-size: var(--fs-400);
     text-align: center;
-    /* margin-inline: auto; */
 }
+/* -------End------- */
+
+/* ===============
+Services
+================*/
+.services-cards-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow: scroll;
+}
+.services-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
+    margin-block: 1rem;
+    flex: 0 0 35.5rem;
+}
+.services-card img {
+    width: 100%;
+    height: 22.6rem;
+}
+.services-card h4 {
+    font-size: var(--fs-600);
+    margin-inline: 1.5rem;
+}
+.services-card p {
+    font-size: var(--fs-400);
+    margin-inline: 1.5rem;
+    color: var(--grey-color);
+}
+.button-next,
+.button-prev {
+    float: right;
+}
+
 /* -------End------- */
