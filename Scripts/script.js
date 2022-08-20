@@ -151,9 +151,13 @@ const options = {
 const observer = new IntersectionObserver((entries, observer) => {
     console.log(entries[0].isIntersecting);
 
-    !entries[0].isIntersecting
-        ? nav.classList.add("bg-primary")
-        : nav.classList.remove("bg-primary");
+    if (!entries[0].isIntersecting) {
+        nav.classList.add("bg-primary");
+        nav.style.boxShadow = "0 0.5rem 1rem rgba(0, 0, 0, 0.2)";
+    } else {
+        nav.classList.remove("bg-primary");
+        nav.style.boxShadow = "none";
+    }
 }, options);
 
 observer.observe(homePage);
