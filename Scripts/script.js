@@ -139,3 +139,21 @@ const modalContent = [
         text: `The most critical element for creating a successful communication trategy is having clarity of brand. It is the foundation. Without brand clarity, it is difficult to create engaging strategies that move your target audience to action in relevant, distinctive, consistent, and repeatable ways. Our experience and network enable us to offer services leading to the results that are specific to the client. We maintain consistently high standards for service and people so that we can always bring the best team with the broadcast range of industry and functional experience to bear on every engagement.Henrich Properties Limited believes that your business, whether It Is a small, medium or large one, deserves recognition...we are here to assist you!Our graphic design department is a studio of world-class designers and developers energized by the challenge of understanding the unique goals of a business and translating them into profitable design and Corporate Branding. We provide Graphic design services which profoundly improve the visibility, credibility and success of your business. We believe that every business is unique, and that every business deserves world-class branding. That's why we devote ourselves to understanding your business before we propose a solution. Then, we brainstorm fresh ideas tailored to your needs. Once we get your input, we implement the solution to your specifications. Once, we are done, a new identity is born. `,
     },
 ];
+
+//INTERSECTION OBSERVER
+const homePage = document.querySelector(".home-page");
+const nav = document.querySelector(".navbar");
+
+const options = {
+    rootMargin: "-90px 0px -100px 0px",
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+    console.log(entries[0].isIntersecting);
+
+    !entries[0].isIntersecting
+        ? nav.classList.add("bg-primary")
+        : nav.classList.remove("bg-primary");
+}, options);
+
+observer.observe(homePage);
