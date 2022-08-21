@@ -55,7 +55,7 @@ const learnMoreText = document.querySelector(".learn-more-text");
 const learnMoreImage = document.querySelector(".learn-more-image");
 
 const setContent = () => {
-    const id = sessionStorage.getItem("id");
+    const id = localStorage.getItem("id");
     if (id === "ee1") {
         learnMoreHeader.textContent = modalContent[0].heading;
         learnMoreText.textContent = modalContent[0].text;
