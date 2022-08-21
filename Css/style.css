@@ -463,6 +463,32 @@ Services
 }
 
 /* -------End------- */
+
+/* ===============
+   FOOTER
+================*/
+.contact {
+  background: var(--primary-color);
+  color: var(--light-color);
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline:min(5%, 10rem);
+ 
+}
+
+.contact a{
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+.contact img {
+  width: 5rem;
+  height: 5rem;
+}
+
+
+/* -------End------- */
+
 /* ===============
     LEARN-MORE
 ================*/
