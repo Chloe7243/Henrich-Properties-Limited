@@ -114,21 +114,21 @@ const buttons = document.querySelectorAll("[data-id]");
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         if (button.dataset.id === "ee1") {
-            localStorage.setItem("id", "ee1");
+            sessionStorage.setItem("id", "ee1");
         } else if (button.dataset.id === "ee2") {
-            localStorage.setItem("id", "ee2");
+            sessionStorage.setItem("id", "ee2");
         } else if (button.dataset.id === "ee3") {
-            localStorage.setItem("id", "ee3");
+            sessionStorage.setItem("id", "ee3");
         } else if (button.dataset.id === "s1") {
-            localStorage.setItem("id", "s1");
+            sessionStorage.setItem("id", "s1");
         } else if (button.dataset.id === "s2") {
-            localStorage.setItem("id", "s2");
+            sessionStorage.setItem("id", "s2");
         } else if (button.dataset.id === "s3") {
-            localStorage.setItem("id", "s3");
+            sessionStorage.setItem("id", "s3");
         } else if (button.dataset.id === "s4") {
-            localStorage.setItem("id", "s4");
+            sessionStorage.setItem("id", "s4");
         } else if (button.dataset.id === "s5") {
-            localStorage.setItem("id", "s5");
+            sessionStorage.setItem("id", "s5");
         }
     });
 });
