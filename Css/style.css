@@ -444,9 +444,25 @@ Services
 .button-prev {
   float: right;
 }
-
 /* -------End------- */
 
+/* ===============
+ OUR WORKS
+================*/
+.our-works-images {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1.5rem;
+}
+
+.our-works-images img {
+  width: minmax(100%, 137.5rem);
+  height: 40rem;
+
+  /* aspect-ratio: 1/0.5; */
+}
+
+/* -------End------- */
 /* ===============
     LEARN-MORE
 ================*/
