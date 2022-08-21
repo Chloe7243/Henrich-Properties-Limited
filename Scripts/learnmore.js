@@ -101,4 +101,4 @@ const setContent = () => {
         }
     }
 };
-setInterval(setContent, 200);
+setContent();
