@@ -101,7 +101,7 @@ p {
     margin-bottom: 1.5rem;
     margin-inline: 1.5rem;
     align-self: flex-start;
-    padding: 1.2rem 2.5rem;
+    padding: 0.8rem 2rem;
     border: none;
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -124,7 +124,7 @@ p {
     color: var(--light-color);
     background-size: cover;
     background-attachment: fixed;
-    /* position: relative; */
+    position: none;
 }
 
 nav {
@@ -189,7 +189,7 @@ nav a {
     .side-nav-bar {
         display: flex;
         flex-direction: column;
-        z-index: 6;
+        z-index: 7;
         background-color: hsla(0, 0%, 90%);
         height: 100vh;
         width: clamp(15em, 25% + 10vw, 20em);
@@ -451,19 +451,29 @@ Services
 /* ===============
     LEARN-MORE
 ================*/
-.hidden {
-    display: none;
+.learn-more-margin {
+    padding-block: 8rem;
+    background-color: var(--light-color);
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
-    z-index: 5;
+@media (min-width: 850px) {
+    .learn-more-margin {
+        padding-block: 12rem;
+    }
 }
-.aqua {
-    color: aqua;
+.learn-more-image {
+    width: clamp(25rem, 15vw + 15rem, 40rem);
+    float: left;
+    margin: 0 1.5rem 0.5rem 0;
+}
+.learn-more-text {
+    font-size: var(--fs-400);
+}
+.learn-more-header {
+    font-size: var(--fs-600);
+}
+@media (max-width: 40em) {
+    .learn-more-image {
+        float: none;
+        width: 100%;
+    }
 }
