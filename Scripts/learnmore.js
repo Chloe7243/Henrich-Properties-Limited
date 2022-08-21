@@ -54,41 +54,51 @@ const learnMoreHeader = document.querySelector(".learn-more-header");
 const learnMoreText = document.querySelector(".learn-more-text");
 const learnMoreImage = document.querySelector(".learn-more-image");
 
+// const setContent = () => {
+//     const id = localStorage.getItem("id");
+//     if (id === "ee1") {
+//         learnMoreHeader.textContent = modalContent[0].heading;
+//         learnMoreText.textContent = modalContent[0].text;
+//         learnMoreImage.src = modalContent[0].imgSrc;
+//     } else if (id === "ee2") {
+//         learnMoreHeader.textContent = modalContent[1].heading;
+//         learnMoreText.textContent = modalContent[1].text;
+//         learnMoreImage.src = modalContent[1].imgSrc;
+//     } else if (id === "ee3") {
+//         learnMoreHeader.textContent = modalContent[2].heading;
+//         learnMoreText.textContent = modalContent[2].text;
+//         learnMoreImage.src = modalContent[2].imgSrc;
+//     } else if (id === "s1") {
+//         learnMoreHeader.textContent = modalContent[3].heading;
+//         learnMoreText.textContent = modalContent[3].text;
+//         learnMoreImage.src = modalContent[3].imgSrc;
+//     } else if (id === "s2") {
+//         learnMoreHeader.textContent = modalContent[4].heading;
+//         learnMoreText.textContent = modalContent[4].text;
+//         learnMoreImage.src = modalContent[4].imgSrc;
+//     } else if (id === "s3") {
+//         learnMoreHeader.textContent = modalContent[5].heading;
+//         learnMoreText.textContent = modalContent[5].text;
+//         learnMoreImage.src = modalContent[5].imgSrc;
+//     } else if (id === "s4") {
+//         learnMoreHeader.textContent = modalContent[6].heading;
+//         learnMoreText.textContent = modalContent[6].text;
+//         learnMoreImage.src = modalContent[6].imgSrc;
+//     } else if (id === "s5") {
+//         learnMoreHeader.textContent = modalContent[7].heading;
+//         learnMoreText.textContent = modalContent[7].text;
+//         learnMoreImage.src = modalContent[7].imgSrc;
+//     }
+// };
+
 const setContent = () => {
     const id = localStorage.getItem("id");
-    if (id === "ee1") {
-        learnMoreHeader.textContent = modalContent[0].heading;
-        learnMoreText.textContent = modalContent[0].text;
-        learnMoreImage.src = modalContent[0].imgSrc;
-    } else if (id === "ee2") {
-        learnMoreHeader.textContent = modalContent[1].heading;
-        learnMoreText.textContent = modalContent[1].text;
-        learnMoreImage.src = modalContent[1].imgSrc;
-    } else if (id === "ee3") {
-        learnMoreHeader.textContent = modalContent[2].heading;
-        learnMoreText.textContent = modalContent[2].text;
-        learnMoreImage.src = modalContent[2].imgSrc;
-    } else if (id === "s1") {
-        learnMoreHeader.textContent = modalContent[3].heading;
-        learnMoreText.textContent = modalContent[3].text;
-        learnMoreImage.src = modalContent[3].imgSrc;
-    } else if (id === "s2") {
-        learnMoreHeader.textContent = modalContent[4].heading;
-        learnMoreText.textContent = modalContent[4].text;
-        learnMoreImage.src = modalContent[4].imgSrc;
-    } else if (id === "s3") {
-        learnMoreHeader.textContent = modalContent[5].heading;
-        learnMoreText.textContent = modalContent[5].text;
-        learnMoreImage.src = modalContent[5].imgSrc;
-    } else if (id === "s4") {
-        learnMoreHeader.textContent = modalContent[6].heading;
-        learnMoreText.textContent = modalContent[6].text;
-        learnMoreImage.src = modalContent[6].imgSrc;
-    } else if (id === "s5") {
-        learnMoreHeader.textContent = modalContent[7].heading;
-        learnMoreText.textContent = modalContent[7].text;
-        learnMoreImage.src = modalContent[7].imgSrc;
+    for (let i = 0; i < modalContent.length; i++) {
+        if (id === modalContent[i].id) {
+            learnMoreHeader.textContent = modalContent[i].heading;
+            learnMoreText.textContent = modalContent[i].text;
+            learnMoreImage.src = modalContent[i].imgSrc;
+        }
     }
 };
-// setInterval(setContent, 200);
-setContent();
+setInterval(setContent, 200);
