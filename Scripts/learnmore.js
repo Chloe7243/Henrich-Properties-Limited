@@ -90,4 +90,5 @@ const setContent = () => {
         learnMoreImage.src = modalContent[7].imgSrc;
     }
 };
-setInterval(setContent, 200);
+// setInterval(setContent, 200);
+setContent();
