@@ -3,7 +3,7 @@
 // ==================
 // MOBILE NAVBAR
 // ==================
-const icon = document.querySelector("i");
+const icon = document.querySelector(".fa-bars");
 const sideBar = document.querySelector(".side-nav-bar");
 const modalState = document.querySelector(".modal");
 const noScroll = document.querySelector("html");
@@ -11,8 +11,8 @@ const noScroll = document.querySelector("html");
 // ----- FN == FUNCTION ------
 // FN FOR POSITION AND VISIBILITY OF SIDEBAR
 const style = (visVal, posVal) => {
-  sideBar.style.visibility = visVal;
-  sideBar.style.right = posVal;
+    sideBar.style.visibility = visVal;
+    sideBar.style.right = posVal;
 };
 
 // FN FOR ADDING CLASS
@@ -23,22 +23,22 @@ const removeClass = (element, className) => element.classList.remove(className);
 
 // FN FOR STYLING ELEENTS
 const styleElement = (element, choice, value) =>
-  (element.style[choice] = value);
+    (element.style[choice] = value);
 
 // FN FOR SIDE NAV BAR TO SLIDE OUT
 const sideBarOpen = () => {
-  style("visible", "0em");
-  addClass(icon, "slide");
-  addClass(modalState, "overlay");
-  styleElement(noScroll, "overflow", "hidden");
+    style("visible", "0em");
+    addClass(icon, "slide");
+    addClass(modalState, "overlay");
+    styleElement(noScroll, "overflow", "hidden");
 };
 
 // FN FOR SIDE NAV BAR TO GO BACK IN
 const sideBarClose = () => {
-  style("hidden", "-20em");
-  removeClass(icon, "slide");
-  removeClass(modalState, "overlay");
-  styleElement(noScroll, "overflow", "scroll");
+    style("hidden", "-20em");
+    removeClass(icon, "slide");
+    removeClass(modalState, "overlay");
+    styleElement(noScroll, "overflow", "scroll");
 };
 
 // TRANSITION STYLE OF ICON AND SIDE NAV BAR
@@ -47,20 +47,20 @@ styleElement(icon, "transition", ".4s ease-in-out");
 
 // TOGGLING ICON FN
 const toggleIcon = () => {
-  icon.classList.toggle("fa-bars");
-  icon.classList.toggle("fa-arrow-left");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-arrow-left");
 };
 
 // THE EVENT LISTENER FOR WHEN ICON IS CLICKED
 icon.addEventListener("click", () => {
-  toggleIcon();
-  !icon.classList.contains("fa-bars") ? sideBarOpen() : sideBarClose();
+    toggleIcon();
+    !icon.classList.contains("fa-bars") ? sideBarOpen() : sideBarClose();
 });
 
 // THE EVENT LISTENER FOR WHEN ELEMENTS IN THE SIDE BAR IS CLICKED
 sideBar.addEventListener("click", () => {
-  toggleIcon();
-  sideBarClose();
+    toggleIcon();
+    sideBarClose();
 });
 
 // ========================
@@ -71,10 +71,10 @@ const prev = document.querySelector(".button-next");
 const next = document.querySelector(".button-prev");
 
 next.addEventListener("click", () => {
-  scrollable.scrollLeft -= 362;
+    scrollable.scrollLeft -= 362;
 });
 prev.addEventListener("click", () => {
-  scrollable.scrollLeft += 362;
+    scrollable.scrollLeft += 362;
 });
 // ==========================
 
@@ -82,20 +82,16 @@ prev.addEventListener("click", () => {
 //INTERSECTION OBSERVER
 // =====================
 const homePage = document.querySelector(".home-page");
-const nav = document.querySelector(".navbar");
+const backToTopBtn = document.querySelector(".back-to-top");
 
 const options = {
-  rootMargin: "-90px 0px -100px 0px",
+    rootMargin: "-50px 0px 0px 0px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
-  if (!entries[0].isIntersecting) {
-    nav.classList.add("bg-primary");
-    nav.style.boxShadow = "0 0.5rem 1rem rgba(0, 0, 0, 0.2)";
-  } else {
-    nav.classList.remove("bg-primary");
-    nav.style.boxShadow = "none";
-  }
+    entries[0].isIntersecting
+        ? backToTopBtn.classList.add("hidden")
+        : backToTopBtn.classList.remove("hidden");
 }, options);
 
 observer.observe(homePage);
@@ -106,7 +102,7 @@ observer.observe(homePage);
 // =======================
 const buttons = document.querySelectorAll("[data-id]");
 buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    localStorage.setItem("id", button.dataset.id);
-  });
+    button.addEventListener("click", () => {
+        localStorage.setItem("id", button.dataset.id);
+    });
 });
