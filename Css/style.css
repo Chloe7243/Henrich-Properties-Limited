@@ -11,7 +11,7 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 *,
@@ -114,22 +114,6 @@ p {
     transform: scale(1.06);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
-/* .button::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0.3rem;
-    background-color: var(--light-color);
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 250ms ease-in;
-}
-.button:hover::after {
-    transform: scaleX(1);
-} */
 /* --------End-------- */
 
 /* =============== 
@@ -501,27 +485,16 @@ Services
 /* ===============
  OUR WORKS
 ================*/
-#our-works {
-    display: grid;
-    place-content: center;
-}
 .swiper {
     width: 100%;
     height: 100%;
 }
-.our-works-images {
-    display: flex;
-    overflow-x: scroll;
-    gap: 1.5rem;
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.our-works-images img {
-    width: minmax(100%, 137.5rem);
-    height: 40rem;
-
-    /* aspect-ratio: 1/0.5; */
-}
-
 /* -------End------- */
 
 /* ===============
