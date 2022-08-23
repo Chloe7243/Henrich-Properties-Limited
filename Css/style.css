@@ -505,10 +505,9 @@ Services
     justify-content: space-between;
     font-size: var(--fs-400);
 }
-/* .contact >*{
-  margin-left: 1rem;
-} */
-
+.contact p {
+    color: var(--grey-color);
+}
 .contact span {
     /* margin-inline: min(4%, 10rem); */
     /* flex-basis: 100%; */
@@ -596,7 +595,7 @@ Services
 /* -------End------- */
 
 /* ===============
-    LEARN-MORE
+LEARN-MORE
 ================*/
 .learn-more-image {
     width: clamp(25rem, 15vw + 15rem, 40rem);
@@ -615,3 +614,4 @@ Services
         width: 100%;
     }
 }
+/* -------End------- */

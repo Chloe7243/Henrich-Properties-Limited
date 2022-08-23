@@ -106,6 +106,7 @@ buttons.forEach((button) => {
         localStorage.setItem("id", button.dataset.id);
     });
 });
+// =======================
 
 // =======================
 //IMAGE SLIDER
