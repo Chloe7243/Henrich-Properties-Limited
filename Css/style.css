@@ -218,20 +218,7 @@ nav a:hover::after {
         font-size: 1.2em;
         padding: 1.2em;
         position: relative;
-    }
-
-    .side-nav-bar a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 50%;
-        height: 0.3rem;
-        background-color: var(--primary-color);
-    }
-
-    .side-nav-bar a:hover {
-        background-color: rgba(0, 0, 0, 0.4);
+        font-size: var(--fs-400);
     }
 
     .slide {
