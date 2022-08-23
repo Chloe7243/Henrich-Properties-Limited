@@ -32,7 +32,7 @@ const modalContent = [
     },
     {
         id: "s3",
-        imgSrc: "./Images//Energy-Services.jpg",
+        imgSrc: "./Images/Energy-Services.jpg",
         heading: "Energy Services",
         text: `The energy industry faces considerable challenges as global demand continues to place the world's scarce natural resources under unrelenting pressure. Companies from across the energy value chain also have to adapt to a raft of new regulations and technologies. Henrich Properties Limited experts in the Energy consulting practice have the extensive industry and operational expertise required to help our clients prosper in these testing times.We have been a long-term consulting partner for many of the world's largest energy companies, helping them capitalize on opportunities while addressing complex legislative policy, technology and economic issues. Primary energy suppliers, OEMs and utilities, among others, turn to Henrich Properties Limited to benefit from its experience gathered over decades of tackling major strategic issues in the energy sector. Members of our Energy & Environment practice closely follow technological advances, regulatory changes and other major developments and are frequent participants in major industry events. For every project, we bring together the relevant industry and regional expertise from across the globe. Our partners are fully hands-on and are directly involved in all stages of the projects. `,
     },
