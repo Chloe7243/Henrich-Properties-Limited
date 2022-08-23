@@ -492,7 +492,7 @@ Services
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 /* -------End------- */
@@ -598,10 +598,6 @@ Services
 /* ===============
     LEARN-MORE
 ================*/
-.learn-more-margin {
-    padding-block: 4rem;
-    background-color: var(--light-color);
-}
 .learn-more-image {
     width: clamp(25rem, 15vw + 15rem, 40rem);
     float: left;

@@ -107,7 +107,9 @@ buttons.forEach((button) => {
     });
 });
 
+// =======================
 //IMAGE SLIDER
+// =======================
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -115,9 +117,11 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
+// =======================
