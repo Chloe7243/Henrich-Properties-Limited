@@ -485,44 +485,40 @@ Services
 /* -------End------- */
 
 /* ===============
-   FOOTER
+   CONTACT AND FOOTER
 ================*/
-.contact {
+.contact-title {
+    font-size: var(--fs-800);
+    margin-bottom: 2rem;
+}
+
+.contact-details {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1.5rem;
+}
+@media (max-width: 620px) {
+    .contact-details {
+        flex-direction: column;
+    }
+}
+.contact-details h3 {
+    font-size: var(--fs-600);
+}
+.contact-details p {
+    color: var(--grey-color);
     font-size: var(--fs-400);
 }
-.contact p {
+.mail {
+    display: flex;
+    flex-direction: column;
+}
+.mail a {
     color: var(--grey-color);
-}
-.contact span {
-    /* margin-inline: min(4%, 10rem); */
-    /* flex-basis: 100%; */
-    width: fit-content;
-}
-
-.contact h3 {
-    padding-bottom: 1rem;
-}
-
-.contact h3::after {
-    content: "";
-    /* position: absolute;
-  left: 0;
-  bottom: 0; */
-    width: 50%;
-    /* height: 0.3rem; */
-    background-color: var(--dark-color);
-
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 250ms ease-in;
-}
-
-.contact span a {
+    font-size: var(--fs-400);
+    margin-top: 1rem;
     text-decoration: none;
-    color: var(--dark-color);
-    display: block;
 }
 
 .footer {
@@ -531,21 +527,16 @@ Services
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-inline: min(5%, 10rem);
+    /* padding-inline: min(5%, 10rem); */
     font-size: var(--fs-600);
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .footer img {
-    width: 7rem;
-    margin-inline: min(2%, 10rem);
+    width: 5rem;
+    margin-right: 0.5rem;
 }
 
-@media (max-width: 845px) {
-    .contact {
-        flex-direction: column;
-    }
-}
 /* -------End------- */
 
 /* ===============
