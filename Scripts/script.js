@@ -62,6 +62,11 @@ sideBar.addEventListener("click", () => {
     toggleIcon();
     sideBarClose();
 });
+// WHEN BROWSER BACK BUTTON IS CLICKED
+window.onhashchange = () => {
+  sideBarClose();
+};
+
 
 // ========================
 //SWIPER SECTION
