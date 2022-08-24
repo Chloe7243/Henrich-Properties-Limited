@@ -472,6 +472,16 @@ Services
 /* ===============
  OUR WORKS
 ================*/
+#our-works h2 {
+    font-size: var(--fs-800);
+}
+#our-works p {
+    color: var(--grey-color);
+    font-size: var(--fs-400);
+}
+#our-works p:last-child {
+    margin-bottom: 5rem;
+}
 .swiper {
     width: 100%;
     height: 100%;
