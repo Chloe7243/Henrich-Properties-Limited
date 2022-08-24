@@ -479,8 +479,8 @@ Services
     color: var(--grey-color);
     font-size: var(--fs-400);
 }
-#our-works p:last-child {
-    margin-bottom: 5rem;
+.works {
+    margin-bottom: 2rem;
 }
 .swiper {
     width: 100%;
@@ -536,7 +536,6 @@ Services
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-inline: min(5%, 10rem); */
     font-size: var(--fs-600);
     letter-spacing: 0.1rem;
 }
