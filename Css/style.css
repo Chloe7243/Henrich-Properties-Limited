@@ -555,6 +555,7 @@ Services
     bottom: 4rem;
     right: 5rem;
     transition: transform 150ms ease-in;
+    z-index: 10;
 }
 .fa-angles-up:hover {
     transform: scale(1.1);
