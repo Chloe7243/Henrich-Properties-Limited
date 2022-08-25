@@ -148,6 +148,7 @@ nav img {
 
 nav a {
     text-decoration: none;
+    font-size: var(--fs-600);
     color: var(--neutral-color);
     position: relative;
 }
