@@ -608,3 +608,9 @@ LEARN-MORE
     }
 }
 /* -------End------- */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-weight: 1000;
+    color: rgba(255, 255, 255, 0.9);
+}
