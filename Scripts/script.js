@@ -64,9 +64,8 @@ sideBar.addEventListener("click", () => {
 });
 // WHEN BROWSER BACK BUTTON IS CLICKED
 window.onhashchange = () => {
-  sideBarClose();
+    sideBarClose();
 };
-
 
 // ========================
 //SWIPER SECTION
@@ -118,8 +117,9 @@ buttons.forEach((button) => {
 // =======================
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 5,
     loop: true,
+    freeMode: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
