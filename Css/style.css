@@ -130,7 +130,6 @@ p {
     color: var(--light-color);
     background-size: cover;
     background-attachment: fixed;
-    position: none;
 }
 
 nav {
