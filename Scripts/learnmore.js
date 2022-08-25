@@ -124,7 +124,7 @@ const sideBarClose = () => {
 
 // TRANSITION STYLE OF ICON AND SIDE NAV BAR
 styleElement(sideBar, "transition", ".5s ease-in-out");
-styleElement(icon, "transition", ".2s ease-in-out");
+styleElement(icon, "transition", ".35s ease-in-out");
 
 // TOGGLING ICON FN
 const toggleIcon = () => {
