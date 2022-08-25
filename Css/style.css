@@ -543,6 +543,7 @@ Services
     align-items: center;
     font-size: var(--fs-600);
     letter-spacing: 0.1rem;
+    padding-block: 1rem;
 }
 
 .footer img {
