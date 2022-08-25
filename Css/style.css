@@ -100,7 +100,6 @@ p {
     margin-top: auto;
     margin-bottom: 1.5rem;
     margin-inline: 1.5rem;
-    align-self: flex-start;
     padding: 0.8rem 2rem;
     border: none;
     background-color: var(--primary-color);
@@ -109,6 +108,12 @@ p {
     transition: 0.2s ease-in-out;
     text-decoration: none;
     position: relative;
+    text-align: center;
+}
+@media (min-width: 40em) {
+    .button {
+        align-self: flex-start;
+    }
 }
 .button:hover {
     transform: scale(1.06);
@@ -457,7 +462,7 @@ Services
     float: right;
     display: none;
 }
-@media (min-width: 700px) {
+@media (min-width: 40em) {
     .button-next,
     .button-prev {
         display: initial;
