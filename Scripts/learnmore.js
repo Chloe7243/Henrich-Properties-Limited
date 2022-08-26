@@ -4,7 +4,7 @@ const modalContent = [
         id: "ee1",
         imgSrc: "./Images/Commercial Development.png",
         heading: "Commercial Development",
-        text: "Henrich Properties Limited commercial developments include some of the finest and most desirable office properties and its landmark construction of a shopping mall in the Federal Capital Territory. Each property is meticulously maintained and features the latest amenities and services. As a result, the company continues to attract and retain a distinguished and growing roster of tenants. Henrich Properties Limited continues to evolve in response to the changing aspirations and challenges of developers, owners and occupants alike. To lift the competitive performance of a building project, or to help it find funding in tough markets, Henrich Properties Limited offers a powerful combination of advisory, design and technical services: •Property Development & Investment •Project Aqcuisition & Management •Project Marketing & Sales. The company's major commercial developments include the direct financing and development of residential and commercial properties in Abuja, Katsina, Kaduna and in Ilorin, Kwara State capital.",
+        text: "Henrich Properties Limited commercial developments include some of the finest and most desirable office properties and its landmark construction of a shopping mall in the Federal Capital Territory. Each property is meticulously maintained and features the latest amenities and services. As a result, the company continues to attract and retain a distinguished and growing roster of tenants. Henrich Properties Limited continues to evolve in response to the changing aspirations and challenges of developers, owners and occupants alike. To lift the competitive performance of a building project, or to help it find funding in tough markets, Henrich Properties Limited offers a powerful combination of advisory, design and technical services: Property Development & Investment, Project Aqcuisition & Management and Project Marketing & Sales. The company's major commercial developments include the direct financing and development of residential and commercial properties in Abuja, Katsina, Kaduna and in Ilorin, Kwara State capital.",
     },
     {
         id: "ee2",
@@ -16,7 +16,7 @@ const modalContent = [
         id: "ee3",
         imgSrc: "./Images/Residential Development.jpg",
         heading: "Residential Development",
-        text: ` Henrich Properties Limited has developed and sold dozens of high-end luxury homes in some of Nigeria's most exclusive communities: •A mini-estate of 16 units of 3 bedroom flats at Kubwa, Abuja. •24 units of 2-bedroom flats off- Isa Kaita Road, Kaduna State. •2 Blocks of 12 flats of 3 bedroom flat each block is made of 2 storey building along Jose Martin Street,Asokoro, Abuja. •16 units of 2-bedroom flat in a premises at Asa Dam Road, Ilorin,Kwara State. Designed by leading architects and interior designers, these magnificent homes are built with a level of expert craftsmanship and attention to detail that is rarely seen in today's market. Homes range from stately mansions in exclusive locations in Abuja to estate homes in Lagos and Kaduna. Henrich Properties Limited also excels in the development of mass housing turnkey projects.`,
+        text: ` Henrich Properties Limited has developed and sold dozens of high-end luxury homes in some of Nigeria's most exclusive communities: A mini-estate of 16 units of 3 bedroom flats at Kubwa, Abuja.; 24 units of 2-bedroom flats off- Isa Kaita Road, Kaduna State.; 2 Blocks of 12 flats of 3 bedroom flat each block is made of 2 storey building along Jose Martin Street,Asokoro, Abuja. and 16 units of 2-bedroom flat in a premises at Asa Dam Road, Ilorin,Kwara State. Designed by leading architects and interior designers, these magnificent homes are built with a level of expert craftsmanship and attention to detail that is rarely seen in today's market. Homes range from stately mansions in exclusive locations in Abuja to estate homes in Lagos and Kaduna. Henrich Properties Limited also excels in the development of mass housing turnkey projects.`,
     },
     {
         id: "s1",
@@ -41,15 +41,15 @@ const modalContent = [
         imgSrc: "./Images/Property Managment.jpg",
         heading: "Property/facility Management & Asset Valuation",
         text: `We render professional services in the following broad facets of
-        Estate Surveying and Valuation.
-        •Technical survey and auditing of plant and machinery assets
+        Estate Surveying and Valuation:
+        Technical survey and auditing of plant and machinery assets
         involving assessment of capacities of various models for
-        different levels of operation.
-        •Structural survey of building and external works to determine
+        different levels of operation. ;
+        Structural survey of building and external works to determine
         current physical and technical conditions to compile schedule
         of dilapidations and estimated costs of remedial (appropriate)
-        works.
-        •Property enumeration and asset valuation involving such
+        works. ;
+        Property enumeration and asset valuation involving such
         assets as land and buildings, economic crops and trees,
         machinery, furniture and fixtures, motor vehicles and other
         specialized asset for various purposes including but not limited
@@ -57,20 +57,20 @@ const modalContent = [
         MORTGAGE, BALANCE SHEET, PROJECT FINANCING,
         TAXATION, MERGER AND ACQUISITION, PRIVATIZATION,
         ASSET SHARING, COMMERCIALIZATION & RESTRUCTURING,
-        PROBATE etc.
-        •Property and facility management involving all types of
+        PROBATE etc. ;
+        Property and facility management involving all types of
         properties ranging from single-use structure to multi-use
         complexes including residential buildings and estates,
         commercial office block and shopping centers, stadia and
         sporting complexes, recreational parks and hospitality
-        facilities as well as commercialized public buildings.
-        •Estate Agency involving property marketing, sale, purchase,
-        lease of properties on behalf of clients for various purposes.
-        •Property development and financing.
-        •Project planning, monitoring and supervision including preinvestment studies, feasibility and viability appraisals and
-        project management.
-        •Property (tenement) Rating and Rating Administration.
-        •Compulsory acquisition and compensation assessment and
+        facilities as well as commercialized public buildings. ;
+        Estate Agency involving property marketing, sale, purchase,
+        lease of properties on behalf of clients for various purposes. ;
+        Property development and financing. ;
+        Project planning, monitoring and supervision including preinvestment studies, feasibility and viability appraisals and
+        project management. ;
+        Property (tenement) Rating and Rating Administration. ;
+        Compulsory acquisition and compensation assessment and
         claim settlement.`,
     },
     {
