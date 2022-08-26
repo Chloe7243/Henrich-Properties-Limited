@@ -371,7 +371,7 @@ header {
 .why-choose-us-card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 9px 0 rgba(32, 31, 31, 0.1);
     margin-top: 1rem;
     flex: 0.4 1 34rem;
     background-color: var(--light-color);
