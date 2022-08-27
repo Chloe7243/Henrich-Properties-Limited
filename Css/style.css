@@ -143,16 +143,6 @@ nav {
     padding-inline: min(5%, 10rem);
     padding-block: 1rem;
     z-index: 10;
-    animation: appear 1s forwards;
-    animation-delay: 2s;
-    opacity: 0;
-    transform: translateY(-100%);
-}
-@keyframes appear {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 nav img {
@@ -189,12 +179,26 @@ nav img {
     font-weight: 600;
     text-decoration: none;
     color: var(--light-color);
+    animation: appear 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(-100%);
 }
 
 .nav {
     display: flex;
     gap: 2rem;
     font-weight: normal;
+    animation: appear 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+@keyframes appear {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .side-nav-bar {
