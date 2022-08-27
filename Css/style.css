@@ -25,6 +25,7 @@ body {
     padding: 0;
     font-family: Poppins, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
