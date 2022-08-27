@@ -108,7 +108,7 @@ const reveals = document.querySelectorAll(".reveal");
 
 reveals.forEach((reveal) => {
     const optionsTwo = {
-        rootMargin: "+5000px 0px -150px 0px",
+        rootMargin: "+5000px 0px -120px 0px",
     };
     const observerTwo = new IntersectionObserver((entries, observer) => {
         entries[0].isIntersecting
