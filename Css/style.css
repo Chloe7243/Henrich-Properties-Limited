@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
 h1,
 h2,
 h4 {
-    line-height: 1;
+    line-height: 1.2;
 }
 
 h2,
@@ -148,13 +148,13 @@ nav img {
     width: 7rem;
 }
 
-nav a {
+.navlink {
     text-decoration: none;
     font-size: var(--fs-400);
     color: var(--neutral-color);
     position: relative;
 }
-nav a::after {
+.navlink::after {
     content: "";
     position: absolute;
     left: 0;
@@ -166,7 +166,7 @@ nav a::after {
     transform-origin: right;
     transition: transform 300ms ease-in;
 }
-nav a:hover::after {
+.navlink:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -176,6 +176,8 @@ nav a:hover::after {
     align-items: center;
     gap: 0.5rem;
     font-weight: 600;
+    text-decoration: none;
+    color: var(--light-color);
 }
 
 .nav {
@@ -257,12 +259,17 @@ header {
 .header-text h1 {
     font-size: var(--fs-xl);
     font-weight: bold;
+    transform: translateX(+100vw);
+    animation: slide 2s forwards;
 }
 
 .header-text h2 {
     font-size: var(--fs-600);
     font-weight: normal;
     line-height: 1.2;
+    transform: translateX(+100vw);
+    animation: slide 2s forwards;
+    animation-delay: 0.5s;
 }
 
 .intro-buttons {
@@ -277,6 +284,9 @@ header {
     border: 0.2rem solid var(--light-color);
     background-color: transparent;
     margin-inline: 1.2rem;
+    transform: translateX(+100vw);
+    animation: slide 2s forwards;
+    animation-delay: 1s;
 }
 
 .to-contact {
@@ -284,6 +294,14 @@ header {
     background-color: var(--light-color);
     color: black;
     margin-inline: 1.2rem;
+    transform: translateX(+100vw);
+    animation: slide 2s forwards;
+    animation-delay: 1.5s;
+}
+@keyframes slide {
+    100% {
+        transform: translateX(0);
+    }
 }
 /* -------End------- */
 
@@ -614,4 +632,13 @@ LEARN-MORE
 .swiper-button-prev:after {
     font-weight: 1000;
     color: rgba(255, 255, 255, 0.9);
+}
+.reveal {
+    transform: translateY(15rem);
+    opacity: 0;
+    transition: all 1.3s ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
