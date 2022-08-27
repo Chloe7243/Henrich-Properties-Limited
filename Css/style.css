@@ -5,7 +5,6 @@
 ================*/
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 * {
@@ -26,6 +25,7 @@ body {
     padding: 0;
     font-family: Poppins, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -260,17 +260,19 @@ header {
 .header-text h1 {
     font-size: var(--fs-xl);
     font-weight: bold;
-    transform: translateX(+100vw);
+    transform: translateY(+100vh);
     animation: slide 2s forwards;
+    opacity: 0;
 }
 
 .header-text h2 {
     font-size: var(--fs-600);
     font-weight: normal;
     line-height: 1.2;
-    transform: translateX(+100vw);
+    transform: translateY(+100vh);
     animation: slide 2s forwards;
     animation-delay: 0.5s;
+    opacity: 0;
 }
 
 .intro-buttons {
@@ -285,9 +287,10 @@ header {
     border: 0.2rem solid var(--light-color);
     background-color: transparent;
     margin-inline: 1.2rem;
-    transform: translateX(+100vw);
+    transform: translateY(+100vh);
     animation: slide 2s forwards;
     animation-delay: 1s;
+    opacity: 0;
 }
 
 .to-contact {
@@ -295,13 +298,15 @@ header {
     background-color: var(--light-color);
     color: black;
     margin-inline: 1.2rem;
-    transform: translateX(+100vw);
+    transform: translateY(+100vh);
     animation: slide 2s forwards;
     animation-delay: 1.5s;
+    opacity: 0;
 }
 @keyframes slide {
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 /* -------End------- */
