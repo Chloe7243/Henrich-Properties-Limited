@@ -33,7 +33,7 @@ const modalContent = [
             Henrich Properties Limited has the expertise and experience to design, build and manage thriving retail centers in today's highly competitive environment.
         </p>
         <p>
-            For high-quality stand-alone destination and high profile stores looking for completely integrated, prestigious locations, Henrich Properties Limited will find and purchase an acceptable site, build and engineer to suit, lease-back the facility, and manage it long-term.
+            For high-quality, stand-alone destination and high profile stores looking for completely integrated, prestigious locations, Henrich Properties Limited will find and purchase an acceptable site, build and engineer to suit, lease-back the facility, and manage it long-term.
         </p>
         <p>
             Henrich Properties Limited definitely knows its role in retail development management, its demands and impact that are distinct from offices or services, and as such has established retail centers located in choice locations around the country.
@@ -48,9 +48,9 @@ const modalContent = [
         </p>
         <ul>
             <li> A mini-estate of 16 units of 3 bedroom flats at Kubwa, Abuja.</li>
-            <li> 24 units of 2-bedroom flats off- Isa Kaita Road, Kaduna State.</li>
-            <li>2 Blocks of 12 flats of 3 bedroom flat each block is made of 2 storey building along Jose Martin Street,Asokoro, Abuja.</li>
-            <li>16 units of 2-bedroom flat in a premises at Asa Dam Road, Ilorin,Kwara State.</li>
+            <li> 24 units of 2-bedroom flats, off-Isa Kaita Road, Kaduna State.</li>
+            <li>2 Blocks of 12 flats of 3 bedroom flat each block is made of 2 storey building along Jose Martin Street, Asokoro, Abuja.</li>
+            <li>16 units of 2-bedroom flat in a premises at Asa Dam Road, Ilorin, Kwara State.</li>
         </ul>
         <p>
             Designed by leading architects and interior designers, these magnificent homes are built with a level of expert craftsmanship and attention to detail that is rarely seen in today's market.
@@ -76,7 +76,7 @@ const modalContent = [
             The sector is diverse - including professional services, education and training, and support services and outsourcing. Multinational organizations and specialist service providers need to analyze their critical performance drivers, evaluate contractual frameworks and continue to evolve service offering strategies that can provide a competitive advantage.
         </p>
         <p>
-            We combine in-depth industry understanding with deep technical expertise to enable clients to develop   winning strategies for acquisition and divestment, service development, new market entry, regulation and political risk management, operational efficiency, and strategy activation. With our support, these clients have been able to develop new service offerings for an increasingly energy-efficient world, maximize ROI from strategic investments and execute detailed plans for international growth.
+            We combine in-depth industry understanding with deep technical expertise to enable clients to develop winning strategies for acquisition and divestment, service development, new market entry, regulation and political risk management, operational efficiency, and strategy activation. With our support, these clients have been able to develop new service offerings for an increasingly energy-efficient world, maximize ROI from strategic investments and execute detailed plans for international growth.
         </p>`,
     },
     {
@@ -84,7 +84,7 @@ const modalContent = [
         imgSrc: "./Images/unnamed.jpg",
         heading: "Finacial Advisory",
         text: `<p>
-            At Henrich Properties Limited, Our hallmark is building relationships based on your individual needs and on our professional expertise and personal service. Finance is a means to an end, not an end in itself. We are committed to helping you achieve your financial goals so that you can focus your attention on all of the other aspects of your life.
+            At Henrich Properties Limited, our hallmark is building relationships based on your individual needs and on our professional expertise and personal service. Finance is a means to an end, not an end in itself. We are committed to helping you achieve your financial goals so that you can focus your attention on all of the other aspects of your life.
         </p>
         <p>
             Our approach starts with establishing a two-way relationship with each client. We believe that a successful advisor-client relationship develops when both sense that they can and will work well together. We spend quite a bit of time with prospective clients making sure that there is a good fit. So our involvement with clients particularly for those services that anticipate a long-term involvement or will over time result in life-changing decisions begins with face-to-face meetings designed to ensure that there is a meeting of the minds and a real sense of trust.
@@ -107,7 +107,7 @@ const modalContent = [
             We have been a long-term consulting partner for many of the world's largest energy companies, helping them capitalize on opportunities while addressing complex legislative policy, technology and economic issues. Primary energy suppliers, OEMs and utilities, among others, turn to Henrich Properties Limited to benefit from its experience gathered over decades of tackling major strategic issues in the energy sector.
         </p>
         <p>
-            Members of our Energy & Environment practice closely follow technological advances, regulatory changes and other major developments and are frequent participants in major industry events. For every project, we bring together the relevant industry and regional expertise from across the globe. Our partners are fully hands-on and are directly involved in all stages of the projects.
+            Members of our Energy & Environment practice, closely follow technological advances, regulatory changes and other major developments and are frequent participants in major industry events. For every project, we bring together the relevant industry and regional expertise from across the globe. Our partners are fully hands-on and are directly involved in all stages of the projects.
         </p>`,
     },
     {
@@ -157,7 +157,7 @@ const modalContent = [
                 Property development and financing.
             </li>
             <li>
-                Project planning, monitoring and supervision including preinvestment studies, feasibility and viability appraisals and
+                Project planning, monitoring and supervision including pre-investment studies, feasibility and viability appraisals and
                 project management.
             </li>
             <li>
@@ -174,13 +174,13 @@ const modalContent = [
         imgSrc: "./Images/Branding and Corporate Identity.jpg",
         heading: "Branding and Corporate Identity",
         text: `<p>
-            The most critical element for creating a successful communication trategy is having clarity of brand. It is the foundation. Without brand clarity, it is difficult to create engaging strategies that move your target audience to action in relevant, distinctive, consistent, and repeatable ways.
+            The most critical element for creating a successful communication strategy is having clarity of brand. It is the foundation. Without brand clarity, it is difficult to create engaging strategies that move your target audience to action in relevant, distinctive, consistent, and repeatable ways.
         </p>
         <p>
             Our experience and network enable us to offer services leading to the results that are specific to the client. We maintain consistently high standards for service and people so that we can always bring the best team with the broadcast range of industry and functional experience to bear on every engagement.
         </p>
         <p>
-            Henrich Properties Limited believes that your business, whether It Is a small, medium or large one, deserves recognition...we are here to assist you!
+            Henrich Properties Limited believes that your business, whether it is a small, medium or large one, deserves recognition...we are here to assist you!
         </p>
         <p>
             Our graphic design department is a studio of world-class designers and developers energized by the challenge of understanding the unique goals of a business and translating them into profitable design and Corporate Branding. We provide Graphic design services which profoundly improve the visibility, credibility and success of your business.
