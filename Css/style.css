@@ -637,6 +637,9 @@ LEARN-MORE
 .learn-more-text {
     font-size: var(--fs-400);
 }
+.learn-more-text ul {
+    list-style-position: inside;
+}
 .learn-more-header {
     font-size: var(--fs-600);
 }
