@@ -274,9 +274,9 @@ header {
 .header-text h1 {
   font-size: var(--fs-xl);
   font-weight: bold;
+  opacity: 0;
   transform: translateY(-200%);
   animation: slide 2.5s forwards;
-  opacity: 0;
   animation-delay: 1.5s;
 }
 
@@ -284,10 +284,10 @@ header {
   font-size: var(--fs-600);
   font-weight: normal;
   line-height: 1.2;
+  opacity: 0;
   transform: translateY(-200%);
   animation: slide 2.5s forwards;
   animation-delay: 1s;
-  opacity: 0;
 }
 
 .intro-buttons {
@@ -302,10 +302,10 @@ header {
   border: 0.2rem solid var(--light-color);
   background-color: transparent;
   margin-inline: 1.2rem;
+  opacity: 0;
   transform: translateY(-200%);
   animation: slide 2.5s forwards;
   animation-delay: 0.2s;
-  opacity: 0;
 }
 
 .to-contact {
@@ -313,14 +313,14 @@ header {
   background-color: var(--light-color);
   color: black;
   margin-inline: 1.2rem;
+  opacity: 0;
   transform: translateY(-200%);
   animation: slide 2.5s forwards;
-  opacity: 0;
 }
 @keyframes slide {
   100% {
-    transform: translateY(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 /* -------End------- */
